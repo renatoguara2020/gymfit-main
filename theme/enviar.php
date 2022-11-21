@@ -1,8 +1,12 @@
 <?php
  // Adiciona o arquivo class.phpmailer.php - você deve especificar corretamente o caminho da pasta com o este arquivo.
- require_once("autenvio/PHPMailerAutoload.php");
+//  require_once("autenvio/PHPMailerAutoload.php");
+//  require_once("./PHPMailer-master/src/PHPMailer/PHPMailer");
+//  require_once("./PHPMailer-master/src/PHPMailer.php/PHPMailer");
+use PHPMailer\PHPMailer\PHPMailer;
+
  // Inicia a classe PHPMailer
-//  $mail = new PHPMailer();
+$mail = new PHPMailer();
  // DEFINIÇÃO DOS DADOS DE AUTENTICAÇÃO - Você deve alterar conforme o seu domínio!
  $mail->IsSMTP(); // Define que a mensagem será SMTP
  $mail->Host = "smtp.seudominio.com.br"; // Seu endereço de host SMTP
